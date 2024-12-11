@@ -6,6 +6,8 @@ import { GITHUB_ICON, LINKEDIN_ICON } from "../UI/Icons";
 // Styled Components
 const ContactContainer = styled.section`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   color: var(--white);
   text-align: center;
@@ -26,6 +28,9 @@ const ContactContainer = styled.section`
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0.08;
+  }
+  @media screen and (max-width: 600px){
+    padding: 30px 3%;
   }
 `;
 
@@ -55,6 +60,13 @@ const Title = styled.h1`
     height: 3px;
     background-color: var(--white);
   }
+  @media screen and (max-width: 900px){
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 600px){
+    font-size: 1.5rem;
+    margin: 0 auto 20px;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -77,6 +89,15 @@ const ContactDescription = styled.p`
   a {
     color: var(--primary);
   }
+  @media screen and (max-width: 900px){
+    width: 100%;
+  }
+  @media screen and (max-width: 600px){
+    padding: 15px;
+    a {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 const SocialMedia = styled.div`
@@ -89,6 +110,12 @@ const SocialMedia = styled.div`
     margin-bottom: 15px;
     font-size: 1rem;
     font-weight: 200;
+  }
+  @media screen and (max-width: 900px){
+    width: 100%;
+  }
+  @media screen and (max-width: 600px){
+    padding: 15px;
   }
 `;
 

@@ -16,6 +16,10 @@ const Button = styled.button`
       props.primary ? "var(--primary)" : "var(--primary)"};
     color: var(--white);
   }
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+    border: 1px solid var(--primary);
+  }
 `;
 
 const Btn = (props) => {

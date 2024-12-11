@@ -446,6 +446,22 @@ const GITHUB_ICON = () => {
   );
 };
 
+const HAMBURGER_ICON = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={w}
+      height={h}
+      viewBox="0 0 32 32"
+    >
+      <path
+        d="M19 16a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm0 13a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zm0-26a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3z"
+        fill="#373737"
+      />
+    </svg>
+  );
+};
+
 export {
   PDF_ICON,
   BOOTSTRAP_ICON,
@@ -468,5 +484,6 @@ export {
   PAYPAL_ICON,
   STRIPE_ICON,
   LINKEDIN_ICON,
-  GITHUB_ICON
+  GITHUB_ICON,
+  HAMBURGER_ICON
 };

@@ -28,10 +28,16 @@ const Section = styled.section`
   background-color: var(--secondary);
   color: var(--white);
   padding: 50px 5%;
+  @media screen and (max-width: 600px) {
+    padding: 50px 3%;
+  }
 `;
 
 const AboutSection = styled.div`
   display: flex;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Heading = styled.h2`
@@ -60,6 +66,13 @@ const Heading = styled.h2`
     height: 3px;
     background-color: var(--white);
   }
+  @media screen and (max-width: 900px) {
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    font-size: 1.5rem;
+  }
 `;
 
 const AboutList = styled.ul`
@@ -81,6 +94,13 @@ const AboutList = styled.ul`
       margin-right: 30px;
       color: var(--primary);
     }
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+      span {
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
+    }
   }
 `;
 
@@ -92,6 +112,19 @@ const ExperienceSection = styled.div`
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+  @media screen and (max-width: 900px) {
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -125,6 +158,24 @@ const SkillsSection = styled.div`
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+    div {
+      margin-top: 20px;
+      gap: 30px;
+      span {
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 200;
+        }
+      }
+    }
+  }
 `;
 
 const ResumeSection = styled.div`
@@ -139,22 +190,6 @@ const ResumeSection = styled.div`
       font-weight: 400;
       margin-bottom: 20px;
     }
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      font-size: 1rem;
-      background-color: var(--primary);
-      color: var(--black);
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: var(--primary);
-      }
-    }
     button {
       display: flex;
       align-items: center;
@@ -167,8 +202,22 @@ const ResumeSection = styled.div`
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 0px;
+    div {
+      h4 {
+        font-size: 1.3rem;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+    }
+  }
 `;
-
 
 const AboutMe = () => {
   const handleDownloadResume = () => {
@@ -206,7 +255,7 @@ const AboutMe = () => {
           I have more than 3.8 years of hands-on industry level experience.
         </h3>
       </ExperienceSection>
-      
+
       <SkillsSection>
         <Heading className="h-font">Skills</Heading>
         <div>
@@ -288,7 +337,7 @@ const AboutMe = () => {
           </span>
         </div>
       </SkillsSection>
-      
+
       <ResumeSection>
         <Heading className="h-font">Resume</Heading>
         <div>
@@ -299,7 +348,6 @@ const AboutMe = () => {
           </Btn>
         </div>
       </ResumeSection>
-
     </Section>
   );
 };
