@@ -1,2 +1,2 @@
 # Deepesh Rohilla Portfolio
-![alt text](https://prnt.sc/1eShasQNgL4l)
+![alt text](https://prnt.sc/1eShasQNgL4l?raw=true)
