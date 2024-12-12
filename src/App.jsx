@@ -1,19 +1,21 @@
-import './App.css';
-import AboutMe from './Components/Sections/AboutMe';
-import Contact from './Components/Sections/Contact';
-import HeroSection from './Components/Sections/HeroSection';
-import Header from './layout/Header';
+import { lazy, Suspense } from "react";
+import "./App.css";
+import Preloader from "./Components/UI/Preloader";
+
+const Header = lazy(() => import("./layout/Header"));
+const HeroSection = lazy(() => import("./Components/Sections/HeroSection"));
+const AboutMe = lazy(() => import("./Components/Sections/AboutMe"));
+const Contact = lazy(() => import("./Components/Sections/Contact"));
 
 function App() {
-
   return (
-    <>
-      <Header/>
-      <HeroSection/>
-      <AboutMe/>
-      <Contact/>
-    </>
-  )
+    <Suspense fallback={<Preloader/>}>
+      <Header />
+      <HeroSection />
+      <AboutMe />
+      <Contact />
+    </Suspense>
+  );
 }
 
-export default App
+export default App;
