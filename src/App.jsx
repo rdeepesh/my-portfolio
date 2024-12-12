@@ -5,6 +5,7 @@ import Preloader from "./Components/UI/Preloader";
 const Header = lazy(() => import("./layout/Header"));
 const HeroSection = lazy(() => import("./Components/Sections/HeroSection"));
 const AboutMe = lazy(() => import("./Components/Sections/AboutMe"));
+const Projects = lazy(() => import("./Components/Sections/Projects"));
 const Contact = lazy(() => import("./Components/Sections/Contact"));
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <HeroSection />
       <AboutMe />
+      <Projects />
       <Contact />
     </Suspense>
   );

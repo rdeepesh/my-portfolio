@@ -165,6 +165,17 @@ const Header = () => {
         <NavLink>
           <Link
             activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Projects
+          </Link>
+        </NavLink>
+        <NavLink>
+          <Link
+            activeClass="active"
             to="contact"
             spy={true}
             smooth={true}

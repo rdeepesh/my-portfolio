@@ -38,6 +38,9 @@ const Heading = styled.h1`
   @media screen and (max-width: 450px) {
     font-size: 2.5rem;
   }
+  @media screen and (max-width: 350px) {
+    font-size: 2rem;
+  }
 `;
 
 const Description = styled.p`

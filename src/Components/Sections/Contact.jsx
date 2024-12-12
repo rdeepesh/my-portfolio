@@ -88,6 +88,7 @@ const ContactDescription = styled.p`
   padding: 25px;
   a {
     color: var(--primary);
+    word-wrap: break-word;
   }
   @media screen and (max-width: 900px){
     width: 100%;
