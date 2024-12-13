@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import FyndecorIMG from "../../assets/Imgs/projects/fyndecor.png";
 import JaldharaSupplyIMG from "../../assets/Imgs/projects/jaldhara-supply.png";
+import HungrySliceIMG from "../../assets/Imgs/projects/hungry-slice.png";
+import ImprimisrxIMG from "../../assets/Imgs/projects/imprimisrx.png";
 import { LINK_ICON } from "../UI/Icons";
 
 const Section = styled.section`
@@ -277,6 +279,12 @@ const Projects = () => {
         "A revolutionary web/mobile application designed to streamline and optimize your daily water supply management system.",
       url: "http://staging.alphonic.net.in:7104/",
       techStacks: [
+        "Node",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "JWT",
+        "Joi",
         "React",
         "Context API",
         "Axios",
@@ -284,6 +292,42 @@ const Projects = () => {
         "Yup",
         "React-Toastify",
         "Phonepe Payment Gateway",
+      ],
+    },
+    {
+      id: "pro_03",
+      image: HungrySliceIMG,
+      altText: "Hungry Slice",
+      name: "Hungry Slice",
+      description:
+        "Customers can browse Free Digital Menu right from the comfort of using their own devices. Our flexible display provides clarity and focuses on any mobile device.",
+      url: "http://staging.alphonic.net.in:8402/",
+      techStacks: [
+        "React",
+        "Context API",
+        "Axios",
+        "Formik",
+        "Yup",
+        "React-Toastify",
+        "Phonepe Payment Gateway",
+      ],
+    },
+    {
+      id: "pro_04",
+      image: ImprimisrxIMG,
+      altText: "ImprimisRX Prescriber Portal",
+      name: "ImprimisRX Prescriber Portal",
+      description:
+        "A web portal for Prescriber and Doctors for management system.",
+      url: "https://prescribe.imprimisrx.com/",
+      techStacks: [
+        "TypeScript",
+        "Next",
+        "React",
+        "Redux",
+        "MUI",
+        "Axios",
+        "React-Toastify",
       ],
     },
   ];
