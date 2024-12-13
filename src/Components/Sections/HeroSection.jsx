@@ -20,7 +20,7 @@ const LeftSection = styled.div`
   justify-content: center;
   width: 60%;
   @media screen and (max-width: 600px) {
-    width: 60%;
+    width: 100%;
   }
 `;
 
@@ -44,7 +44,7 @@ const Heading = styled.h1`
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 0;
   font-weight: 200;
   color: var(--white);
