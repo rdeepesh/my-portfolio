@@ -277,7 +277,8 @@ const Projects = () => {
       name: "Jaldhara Supply",
       description:
         "A revolutionary web/mobile application designed to streamline and optimize your daily water supply management system.",
-      url: "http://staging.alphonic.net.in:7104/",
+      // url: "http://staging.alphonic.net.in:7104/",
+      url: "https://www.jaldharasupply.com/",
       techStacks: [
         "Node",
         "Express",

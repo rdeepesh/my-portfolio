@@ -252,7 +252,7 @@ const AboutMe = () => {
       <ExperienceSection>
         <Heading className="h-font">Experience</Heading>
         <h3>
-          I have more than 3.8 years of hands-on industry level experience.
+          I have around 4 years of hands-on industry level experience..
         </h3>
       </ExperienceSection>
 
