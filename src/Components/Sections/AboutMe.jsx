@@ -338,7 +338,7 @@ const AboutMe = () => {
         </div>
       </SkillsSection>
 
-      <ResumeSection>
+      {/* <ResumeSection>
         <Heading className="h-font">Resume</Heading>
         <div>
           <h4>You can check my resume in the link below.</h4>
@@ -347,7 +347,7 @@ const AboutMe = () => {
             <PDF_ICON />
           </Btn>
         </div>
-      </ResumeSection>
+      </ResumeSection> */}
     </Section>
   );
 };
