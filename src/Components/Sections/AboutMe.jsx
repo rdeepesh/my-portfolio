@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import Btn from "../UI/Btn";
+// import Btn from "../UI/Btn";
 import {
   BOOTSTRAP_ICON,
   CSS_ICON,
+  DOCKER_ICON,
   EXPRESSJS_ICON,
   GIT_ICON,
   HTML_ICON,
@@ -13,7 +14,7 @@ import {
   NEXTJS_ICON,
   NODEJS_ICON,
   PAYPAL_ICON,
-  PDF_ICON,
+  // PDF_ICON,
   REACT_ICON,
   REDIS_ICON,
   REDUX_ICON,
@@ -178,51 +179,51 @@ const SkillsSection = styled.div`
   }
 `;
 
-const ResumeSection = styled.div`
-  display: flex;
-  margin-bottom: 40px;
+// const ResumeSection = styled.div`
+//   display: flex;
+//   margin-bottom: 40px;
 
-  div {
-    flex: 1;
+//   div {
+//     flex: 1;
 
-    h4 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      svg {
-        width: 20px;
-        height: 20px;
-        fill: var(--white);
-        margin-left: 10px;
-      }
-    }
-  }
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    margin-bottom: 0px;
-    div {
-      h4 {
-        font-size: 1.3rem;
-      }
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-      }
-    }
-  }
-`;
+//     h4 {
+//       font-size: 1.5rem;
+//       font-weight: 400;
+//       margin-bottom: 20px;
+//     }
+//     button {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       svg {
+//         width: 20px;
+//         height: 20px;
+//         fill: var(--white);
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 600px) {
+//     flex-direction: column;
+//     margin-bottom: 0px;
+//     div {
+//       h4 {
+//         font-size: 1.3rem;
+//       }
+//       button {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         margin: auto;
+//       }
+//     }
+//   }
+// `;
 
 const AboutMe = () => {
-  const handleDownloadResume = () => {
-    window.open("/DeepeshRohilla_FullStackDeveloper_Resume.pdf", "target");
-  };
+  // const handleDownloadResume = () => {
+  //   window.open("/DeepeshRohilla_FullStackDeveloper_Resume.pdf", "target");
+  // };
 
   return (
     <Section id="about_me">
@@ -334,6 +335,10 @@ const AboutMe = () => {
           <span>
             <STRIPE_ICON />
             <p>Stripe</p>
+          </span>
+          <span>
+            <DOCKER_ICON />
+            <p>Docker</p>
           </span>
         </div>
       </SkillsSection>
