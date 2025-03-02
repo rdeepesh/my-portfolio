@@ -152,14 +152,14 @@ const Contact = () => {
         <p>You can also find me on these social media.</p>
         <Icons>
           <a
-            href="https://github.com/deepeshrohilla"
+            href="https://github.com/rdeepesh"
             target="_blank"
             rel="noreferrer"
           >
             <GITHUB_ICON />
           </a>
           <a
-            href="https://www.linkedin.com/in/deepeshrohilla/"
+            href="https://www.linkedin.com/in/irdeepesh/"
             target="_blank"
             rel="noreferrer"
           >
