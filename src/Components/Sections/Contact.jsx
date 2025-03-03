@@ -151,13 +151,13 @@ const Contact = () => {
       <SocialMedia>
         <p>You can also find me on these social media.</p>
         <Icons>
-          <a
+{/*           <a
             href="https://github.com/rdeepesh"
             target="_blank"
             rel="noreferrer"
           >
             <GITHUB_ICON />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/irdeepesh/"
             target="_blank"
